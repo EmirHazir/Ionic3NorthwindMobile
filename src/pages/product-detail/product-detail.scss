@@ -1,0 +1,28 @@
+.card-backgound-page{
+    ion-card{
+        position: relative;
+        text-align: center;
+    }
+    .card-title{
+        position: absolute;
+        top:12%;
+        font-size: 2.3em;
+        width: 100%;
+        font-weight: bold;
+        color:teal;
+    }
+    .card-subtitle{
+        position: absolute;
+        top:55%;
+        font-size: 2em;
+        width: 100%;
+        color: #fff;
+    }
+    .card-add-to-card{
+        position: absolute;
+        top: 70%;
+    }
+    .card-add-to-card:hover{
+        background-color: red;
+    }
+}
