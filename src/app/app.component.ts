@@ -6,6 +6,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { ProductPage } from "../pages/product/product";
+import { CartPage } from "../pages/cart/cart";
+import { ActionSheetPage } from "../pages/action-sheet/action-sheet";
+import { AlertPage } from "../pages/alert/alert";
+import { BadgePage } from "../pages/badge/badge";
 
 @Component({
   templateUrl: 'app.html'
@@ -24,7 +28,11 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'Products', component: ProductPage }
+      { title: 'Products', component: ProductPage },
+      { title: 'Go to Cart', component: CartPage },
+      { title: 'Action Sheet', component: ActionSheetPage },
+      { title: 'Alert', component: AlertPage },
+      { title: 'Badge', component: BadgePage },
     ];
 
   }

@@ -1,0 +1,28 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Your Cart</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list *ngFor="let item of cartItems">
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../../assets/images/chai.jpg" alt="">
+      </ion-avatar>
+      <h2>{{item.product.productName}}</h2>
+      <h3>{{item.quantity*item.product.unitPrice | currency:'USD':true}}</h3>
+      <p>{{item.product.quantityPerUnit}}</p>
+    </ion-item>
+  </ion-list>
+
+<p *ngIf="cartItems == 0">Your cart is empty</p>
+
+</ion-content>
+
+

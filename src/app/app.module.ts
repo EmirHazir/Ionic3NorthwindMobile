@@ -12,6 +12,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ProductPage } from "../pages/product/product";
 import { ProductDetailPage } from "../pages/product-detail/product-detail";
+import { CartService } from "../providers/cart.service";
+import { CartPage } from "../pages/cart/cart";
+import { ActionSheetPage } from "../pages/action-sheet/action-sheet";
+import { AlertPage } from "../pages/alert/alert";
+import { BadgePage } from "../pages/badge/badge";
 
 @NgModule({
   declarations: [
@@ -19,7 +24,11 @@ import { ProductDetailPage } from "../pages/product-detail/product-detail";
     HomePage,
     ListPage,
     ProductPage,
-    ProductDetailPage
+    ProductDetailPage,
+    CartPage,
+    ActionSheetPage,
+    AlertPage,
+    BadgePage
   ],
   imports: [
     BrowserModule,
@@ -32,11 +41,16 @@ import { ProductDetailPage } from "../pages/product-detail/product-detail";
     HomePage,
     ListPage,
     ProductPage,
-    ProductDetailPage
+    ProductDetailPage,
+    CartPage,
+    ActionSheetPage,
+    AlertPage,
+    BadgePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    CartService,
     {provide:"apiUrl", useValue:"http://northwindapi.azurewebsites.net/api"}, //api ile çalışıyorum
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
