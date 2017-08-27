@@ -20,6 +20,8 @@ import { ListsPage } from "../pages/lists/lists";
 import { Lists2Page } from "../pages/lists2/lists2";
 import { LoadingPage } from "../pages/loading/loading";
 import { SliderPage } from "../pages/slider/slider";
+import { TelefonNoPage } from "../pages/telefon-no/telefon-no";
+import { CameraPage } from "../pages/camera/camera";
 
 @Component({
   templateUrl: 'app.html'
@@ -53,6 +55,8 @@ export class MyApp {
       { title: 'Lists 2', component: Lists2Page },
       { title: 'Loading', component: LoadingPage },
       { title: 'Slider', component: SliderPage },
+      { title: 'Telefon', component: TelefonNoPage },
+      { title: 'Camera', component: CameraPage },
     ];
 
   }

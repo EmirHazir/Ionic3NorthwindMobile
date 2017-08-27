@@ -27,6 +27,8 @@ import { ListsPage } from "../pages/lists/lists";
 import { Lists2Page } from "../pages/lists2/lists2";
 import { LoadingPage } from "../pages/loading/loading";
 import { SliderPage } from "../pages/slider/slider";
+import { TelefonNoPage } from "../pages/telefon-no/telefon-no";
+import { CameraPage } from "../pages/camera/camera";
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { SliderPage } from "../pages/slider/slider";
     ListsPage,
     Lists2Page,
     LoadingPage,
-    SliderPage
+    SliderPage,
+    TelefonNoPage,
+    CameraPage
   ],
   imports: [
     BrowserModule,
@@ -75,7 +79,9 @@ import { SliderPage } from "../pages/slider/slider";
     ListsPage,
     Lists2Page,
     LoadingPage,
-    SliderPage
+    SliderPage,
+    TelefonNoPage,
+    CameraPage
   ],
   providers: [
     StatusBar,

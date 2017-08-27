@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Telefon</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>number To Call</ion-label>
+    <ion-input type="text" [(ngModel)]="numberToCall"></ion-input>
+  </ion-item>
+  <button ion-button (click)="call(numberToCall)">Ara</button>
+</ion-content>
