@@ -21,9 +21,7 @@
 
     <button ion-item *ngFor="let product of products" (click)="itemTapped($event, product)">
       {{product.productName}}
-      <div item-right>
-        {{product.unitPrice | currency:'USD':true}}
-      </div>
+          <ion-badge color="primary" item-end>{{product.unitPrice | currency:'USD':true}}</ion-badge>      
     </button>
   </ion-list>
 </ion-content>

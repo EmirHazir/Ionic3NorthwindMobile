@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 
 import { ProductService } from "../../providers/product.service";
 import { Product } from "../../entities/product";
@@ -20,12 +20,22 @@ export class ProductPage {
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public productService: ProductService,
-    public categoryService: CategoryService) { }
+    public categoryService: CategoryService,
+    public loadingCtrl: LoadingController) { }
 
 
   ionViewDidLoad() {
-    this.getProducts();
-    this.getCategories();
+    let loader = this.loadingCtrl.create({
+      content: "Please wait..."
+    })
+    //Yukarıdaki loadingi presnet içinde ne basıldıysa sayfaya düşene dek çalıştır. Bir duration vermedim.
+    //then ile verileri cekip verilerin sayfaya düşmesi ile dismiss le loadingi kapattım
+    loader.present().then(() => {
+      this.getProducts();
+      this.getCategories();
+      loader.dismiss();
+    })
+
   }
 
   products: Product[];
@@ -57,6 +67,10 @@ export class ProductPage {
     } else {
       this.productService.getProducts(this.selectedCategory).subscribe(p => {
         this.products = p;
-      })}
+      })
+    }
   }
+
+
+
 }

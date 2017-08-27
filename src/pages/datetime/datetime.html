@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Datetime</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Date Starts</ion-label>
+    <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.dateStarts"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Time Starts</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Date Finish</ion-label>
+    <ion-datetime displayFormat="MM DD YYYY" [(ngModel)]="event.dateEnds"></ion-datetime>
+  </ion-item>
+
+  <h4 style="color:brown" >Event başlama tarihi = {{event.dateStarts}}</h4> 
+  <h4 style="color:brown" >Event başlama saati = {{event.timeStarts}}</h4> 
+  <h4 style="color:brown" >Event bitiş tarihi = {{event.dateEnds}}</h4> 
+</ion-content>

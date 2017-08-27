@@ -17,6 +17,16 @@ import { CartPage } from "../pages/cart/cart";
 import { ActionSheetPage } from "../pages/action-sheet/action-sheet";
 import { AlertPage } from "../pages/alert/alert";
 import { BadgePage } from "../pages/badge/badge";
+import { ButtonPage } from "../pages/button/button";
+import { CheckboxPage } from "../pages/checkbox/checkbox";
+import { DatetimePage } from "../pages/datetime/datetime";
+import { FabsPage } from "../pages/fabs/fabs";
+import { GesturesPage } from "../pages/gestures/gestures";
+import { InputPage } from "../pages/input/input";
+import { ListsPage } from "../pages/lists/lists";
+import { Lists2Page } from "../pages/lists2/lists2";
+import { LoadingPage } from "../pages/loading/loading";
+import { SliderPage } from "../pages/slider/slider";
 
 @NgModule({
   declarations: [
@@ -28,7 +38,17 @@ import { BadgePage } from "../pages/badge/badge";
     CartPage,
     ActionSheetPage,
     AlertPage,
-    BadgePage
+    BadgePage,
+    ButtonPage,
+    CheckboxPage,
+    DatetimePage,
+    FabsPage,
+    GesturesPage,
+    InputPage,
+    ListsPage,
+    Lists2Page,
+    LoadingPage,
+    SliderPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +65,17 @@ import { BadgePage } from "../pages/badge/badge";
     CartPage,
     ActionSheetPage,
     AlertPage,
-    BadgePage
+    BadgePage,
+    ButtonPage,
+    CheckboxPage,
+    DatetimePage,
+    FabsPage,
+    GesturesPage,
+    InputPage,
+    ListsPage,
+    Lists2Page,
+    LoadingPage,
+    SliderPage
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Buttons</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h3>basic style</h3>
+  <button ion-button (click)="save()">Save</button>
+  <button ion-button small color="secondary" (click)="save()">Save</button>
+  <button ion-button large color="danger" (click)="save()">Save</button>
+  <button ion-button color="dark" (click)="save()">Save</button>
+  <button ion-button color="light" (click)="save()">Save</button>
+
+  <h3>outline style</h3>
+  <button ion-button (click)="save()" outline>Save</button>
+  <button ion-button color="secondary" (click)="save()" outline>Save</button>
+  <button ion-button color="danger" (click)="save()" outline>Save</button>
+  <button ion-button color="dark" (click)="save()" outline>Save</button>
+  <button ion-button color="light" (click)="save()" outline>Save</button>
+
+  <h3>clear style</h3>
+  <button ion-button (click)="save()" clear>Save</button>
+  <button ion-button color="secondary" (click)="save()" clear>Save</button>
+  <button ion-button color="danger" (click)="save()" clear>Save</button>
+  <button ion-button color="dark" (click)="save()" clear>Save</button>
+
+  <h3>round style</h3>
+  <button ion-button (click)="save()" round>Save</button>
+  <button ion-button color="secondary" (click)="save()" round>Save</button>
+  <button ion-button color="danger" (click)="save()" round>Save</button>
+  <button ion-button color="dark" (click)="save()" round>Save</button>
+  <button ion-button color="light" (click)="save()" round>Save</button>
+
+  <h3>full style</h3>
+  <button ion-button (click)="save()" full>Save</button>
+  <button ion-button color="secondary" (click)="save()" full>Save</button>
+  <button ion-button color="danger" (click)="save()" full>Save</button>
+  <button ion-button color="dark" (click)="save()" full>Save</button>
+  <button ion-button color="light" (click)="save()" full>Save</button>
+
+  <h3>icon style</h3>
+  <button ion-button>
+    <ion-icon name="logo-google"></ion-icon>
+  </button>
+</ion-content>
